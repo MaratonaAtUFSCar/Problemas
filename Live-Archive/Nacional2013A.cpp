@@ -37,11 +37,11 @@ int main()
     int n;
     while (cin >> n)
     {
-        //Zera a matriz de adjacência
+        //Zera a matriz de adjacÃªncia
         for (int i = 0; i < N; i++)
             adj[i].clear();
 
-        //Leitura e modificação do tabuleiro como pares de linhas e colunas modelado para o problema
+        //Leitura e modificaÃ§Ã£o do tabuleiro como pares de linhas e colunas modelado para o problema
         //Modifica linhas
 
         int linhaAtual = 1;
@@ -82,7 +82,7 @@ int main()
         //Monta o grafo para emparelhamento
 
         int nLinhas = linhaAtual - 1;   //Utilizado na hora do emparelhamento
-        int nColunas = colunaAtual - 1; //Não utilizado
+        int nColunas = colunaAtual - 1; //NÃ£o utilizado
 
         for (int i = 0; i < n; i++)
         {
@@ -96,13 +96,13 @@ int main()
             }
         }
 
-        //Chama emparelhamento dando a saída
+        //Chama emparelhamento dando a saÃ­da
         //Emparelhamento implementado pelo Fossa
         memset(A, 0, sizeof A);
         memset(B, 0, sizeof B);
         int res = 0;
 
-        //Para todos os nós de um único lado
+        //Para todos os nÃ³s de um Ãºnico lado
         for (int i = 1; i <= nLinhas; i++)
         {
             memset(v, 0, sizeof v);
